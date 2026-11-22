@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "daot_flashback_bridge",
+  "version": "${version}",
+  "name": "DAOT Flashback Bridge",
+  "description": "Bridges Danny's AOT animation state into Flashback recordings and freezes PAL/ODM pose while replay playback is paused.",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.daot.flashbackbridge.DaotFlashbackBridge"
+    ],
+    "client": [
+      "dev.daot.flashbackbridge.client.DaotFlashbackBridgeClient"
+    ]
+  },
+  "mixins": [
+    "daot_flashback_bridge.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "dannys-aot": "*",
+    "player_animation_library": "*"
+  },
+  "suggests": {
+    "flashback": "*"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "package": "dev.daot.flashbackbridge.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ModNetworkingMixin",
+    "TorpedoHitboxMixin",
+    "HookPointMixin",
+    "RemoteHookDataMixin"
+  ],
+  "client": [
+    "PlayerAnimationProcessorMixin",
+    "ODMReleaseSpinHandlerMixin",
+    "ODMUpOrbitTiltMixin",
+    "ODMTorpedoTiltMixin",
+    "ODMAnimationHandlerMixin",
+    "HookLineRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
